@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas com colspan e rowspan</title>
+    <link rel="icon" type="image/x-icon" href="icons/tabela.png">
+
+    <style>
+        table,
+        td {
+            border: 1px solid red;
+        }
+
+        td {
+            padding: 30px 60px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Página 2 - Tabelas com colspan e rowspan</h1>
+
+    <section id="tabela-colspan">
+        <h2>Tabela com colspan</h2>
+
+        <table>
+            <tr>
+                <td colspan="3">Colspan</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="tabela-rowspan">
+        <h2>Tabela com rowspan</h2>
+
+        <table>
+            <tr>
+                <td>-</td>
+                <td rowspan="3">Rowspan</td>
+            </tr>
+            <tr>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="tabela-colspa-rowspan">
+        <h2>Tabela com colspan e rowspan</h2>
+
+        <table>
+            <tr>
+                <td colspan="2">Colspan</td>
+                <td></td>
+                <td rowspan="3">Rowspan</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td colspan="2">Colspan</td>
+            </tr>
+            <tr>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+                <td>-</td>
+            </tr>
+
+        </table>
+    </section>
+
+    <br>
+
+    <p><a href="principal.html">Voltar ao menu principal</a></p>
+
+</body>
+
+</html>
