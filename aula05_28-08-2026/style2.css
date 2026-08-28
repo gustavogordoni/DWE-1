@@ -1,0 +1,120 @@
+.text-red {
+    color: red;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-blue {
+    color: blue;
+}
+
+
+.bg-green {
+    background-color: green;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+}
+
+.bg-lightblue {
+    background-color: lightblue;
+}
+
+.bg-lightyellow {
+    background-color: #fff5ee;
+}
+
+.bg-yellow {
+    background-color: yellow;
+}
+
+.bg-lightgray {
+    background-color: lightgray;
+}
+
+.bg-seagreen {
+    background-color: #e0ffff;
+}
+
+.bg-lightbrown {
+    background-color: #ffefd5;
+}
+
+.bg-lightgreen {
+    background-color: #ccffa3;
+}
+
+
+.border-green {
+    border: solid 4px green;
+}
+
+.border-red {
+    border: solid 4px red;
+}
+
+.border-blue {
+    border: solid 4px blue;
+}
+
+.border-yellow {
+    border: solid 4px yellow;
+}
+
+.border-seagreen {
+    border: solid 4px seagreen;
+}
+
+.dooted-seagreen {
+    border-color: seagreen;
+}
+
+.dooted-brown {
+    border-color: brown;
+}
+
+.dooted-green {
+    border-color: green;
+}
+
+.border-brown {
+    border: solid 4px brown;
+}
+
+code {
+    background-color: #dcdcdc;
+}
+
+#bg-black {
+    background-color: black;
+    color: white;
+
+    border-bottom: green solid 20px;
+}
+
+figcaption {
+    color: rgb(113, 107, 107);
+}
+
+img {
+    border-style: dotted;
+    border-width: 8px;
+}
+
+#tartaruga-marinha:hover,
+#onca-pintada:hover,
+#mico-leao-dourado:hover {
+    background-color: #e77eec;
+    outline: dashed 10px #e77eec;
+}
+
+#margin-none {
+    margin: 0px;
+}

@@ -1,0 +1,86 @@
+============================================================================
+Não digite o texto abaixo, só copie e cole no lugar certo.
+Sua tarefa é:
+
+(1) colocar as tags HTML certas em volta de cada trecho,
+(2) aplicar CSS usando SOMENTE color, background-color e border.
+
+Atenção: alguns trechos abaixo contêm caracteres como < > & © ° × e aspas
+curvas. Se você colar isso direto no seu HTML, o navegador vai tentar
+interpretar como código de verdade (ou vai simplesmente não ficar igual
+ao que está aqui). Você vai precisar descobrir a entidade HTML certa
+para cada um desses casos.
+============================================================================
+
+
+Título:
+Praticando 3 - Seções, Containers e Bordas com CSS
+
+Este é um exemplo de cabeçalho feito com <header>.
+
+
+SEÇÃO 1
+
+Este é um exemplo de texto com uma palavra azul, uma palavra verde e uma palavra vermelha.
+
+Caixa de destaque (uma DIV dentro da seção):
+
+Segundo a “História da Web”, a primeira página HTML foi publicada em 1991 — mais de 30 anos atrás. Hoje, a linguagem é usada em bilhões de páginas ao redor do mundo.
+
+Curiosidade: o símbolo de grau (°) e o de multiplicação (×) também são entidades, como em 25°C ou 3 × 4.
+
+
+SEÇÃO 2
+
+Este é outro exemplo de texto, agora há mais palavras em verde, algumas em azul e só uma em vermelho.
+
+Caixa de destaque (uma DIV dentro da seção):
+
+Todo rodapé de site sério tem um símbolo de copyright (©) e, às vezes, até de marca registrada (®) ou marca comercial (™). Setas também são comuns em menus: ← voltar → avançar.
+
+E frações? ½ xícara de açúcar, ¼ de hora — tudo isso são entidades HTML!
+
+
+SEÇÃO 3
+
+Além dos símbolos "bonitinhos", entidades resolvem um problema real: como mostrar um sinal de menor (<) ou maior (>) na tela sem o navegador achar que é o início de uma tag?
+
+Caixa de destaque (uma DIV dentro da seção):
+
+Se eu quiser que a tag <p> apareça como texto normal (sem virar um parágrafo de verdade), preciso escrever &lt;p&gt; no código-fonte.
+
+O mesmo vale para o "E comercial" (&): quando eu quero mostrá-lo literalmente, preciso escrever &amp;.
+
+Repare que a tag <code> foi usada aqui porque ela indica que aquele trecho é código — e o navegador já mostra esse texto com uma fonte diferente por padrão, sem eu precisar definir nada com CSS.
+
+
+SEÇÃO 4
+
+Alguns elementos HTML ficam na mesma linha que o conteúdo ao redor (inline); outros sempre começam em uma linha nova (block). Compare:
+
+Caixa "Inline" (uma DIV):
+
+<a>
+<strong>
+<em>
+<mark>
+<code>
+H2O (<sub>)
+m2 (<sup>)
+
+Repare: todos os exemplos acima ficam lado a lado, na mesma linha.
+
+Caixa "Block" (uma DIV):
+
+<div> — um container genérico.
+<p> — um parágrafo.
+<h1> a <h6> — títulos.
+<blockquote> — uma citação.
+<section> — uma seção (como esta própria página usa!)
+
+Repare: cada exemplo acima começa em uma linha própria, mesmo sendo um texto curto.
+
+
+Este é um exemplo de rodapé feito com <footer>.
+
+© 2026 IFSP Votuporanga — Desenvolvimento Web 1

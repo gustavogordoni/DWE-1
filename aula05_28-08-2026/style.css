@@ -1,0 +1,30 @@
+.border-red{
+    border: 5px solid red;
+    background-color: lightblue;
+}
+
+.border-green{
+    border: 5px solid green;
+    background-color: #f2ffab;
+}
+
+.border-blue{
+    border: 5px solid blue;
+    background-color: #fcbb8f;
+}
+
+span{
+    font-weight: bold;
+}
+
+.text-red{
+    color: red;
+}
+
+.text-green{
+    color: green;
+}
+
+.text-blue{
+    color: blue;
+}
