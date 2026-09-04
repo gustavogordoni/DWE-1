@@ -7,4 +7,4 @@ Repositório dos exercícios (praticandos) realizados durante a disciplina de De
 
 Acesse [gustavogordoni.github.io/DWE-1](https://gustavogordoni.github.io/DWE-1/) para visualizar um menu desenvolvido para organizar e facilitar o acesso às atividades realizadas durante a disciplina.
 
-<div align="center"><img src="assets/menu.png" width="50%" /></div>
+<div align="center"><img src="assets/menu.png" width="75%" /></div>
