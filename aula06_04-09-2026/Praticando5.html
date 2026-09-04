@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 5 - Opacidades</title>
+    <link rel="stylesheet" href="Praticando5.css">
+
+</head>
+
+<body>
+    <!--
+        PRATICANDO 5 - Opacidades
+        ========================================================
+
+        Crie 3 seções diferentes:
+
+        1. Efeito de foco transparente (imagens)
+           As 3 imagens devem começar com opacidade reduzida e ficar
+           com opacidade total ao passar o mouse (hover). Ao ficar em
+           foco, destaque a imagem com um outline.
+
+        2. Opacidade com a propriedade "opacity"
+           Cada div deve usar o valor de opacidade indicado no seu
+           próprio título (0.8, 0.6, 0.4, 0.2). Observe o que acontece
+           com o texto dentro de cada div.
+
+        3. Opacidade com "background-color" em rgba
+           Repita o mesmo efeito visual do item 2, mas agora usando
+           rgba() no background-color em vez de opacity. Compare o
+           resultado com o item anterior — o que muda no texto?
+    -->
+    <h1>Praticando 5 - Opacidades</h1>
+
+    <section id="img-opacity">
+        <h2>Exemplo de uso de opacidade para fazer um efeito de foco transparente</h2>
+
+        <img width="250" src="imagens/img_forest.jpg" alt="Floresta">
+        <img width="250" src="imagens/img_mountains.jpg" alt="Montanhas">
+        <img width="250" src="imagens/img_5terre.jpg" alt="Cinque Terre">
+    </section>
+
+    <br>
+
+    <section id="text-opacity">
+        <h2>Exemplo de uso de opacidade para tornar as caixas transparentes usando a propriedade <code>opacity</code>
+        </h2>
+
+        <p id="opacity-1"><strong>Opacidade 1.0 (valor padrão, nenhuma opacidade)</strong></p>
+        <p id="opacity-2"><strong>Opacidade 0.8</strong></p>
+        <p id="opacity-3"><strong>Opacidade 0.6</strong></p>
+        <p id="opacity-4"><strong>Opacidade 0.4</strong></p>
+        <p id="opacity-5"><strong>Opacidade 0.2</strong></p>
+    </section>
+
+    <br>
+
+    <section id="bg-rgba">
+        <h2>Exemplo de uso de opacidade para tornar as caixas transparentes usando a propriedade background-color com
+            valor em rgba</h2>
+
+        <p id="rgba-1"><strong>RGBA 0.8</strong></p>
+        <p id="rgba-2"><strong>RGBA 0.6</strong></p>
+        <p id="rgba-3"><strong>RGBA 0.4</strong></p>
+        <p id="rgba-4"><strong>RGBA 0.2</strong></p>
+    </section>
+</body>
+
+</html>

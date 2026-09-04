@@ -1,0 +1,53 @@
+td, th, table {
+    border: solid 1px black;
+    text-align: center;
+}
+
+td, th {
+    padding: 0 20px;
+}
+
+#bg-red{
+    background-color: red;
+}
+
+#bg-green{
+    background-color: green;
+}
+
+#bg-blue{
+    background-color: blue;
+}
+
+#bg-b30000{
+    background-color: #b30000;
+}
+
+#bg-660000{
+    background-color: #660000;
+}
+
+#bg-99ff99{
+    background-color: #99ff99;
+}
+
+#bg-004d00{
+    background-color: #004d00;
+}
+
+#bg-ccccff{
+    background-color: #ccccff;
+}
+
+#bg-000066{
+    background-color: #000066;
+}
+
+body{
+    background-image: url("imagens/1330892.png"), url("imagens/Marca_IFSP_2015031.png");
+    background-size: 10vh, 15vh;
+    background-repeat: repeat-x, no-repeat;
+    background-position: bottom, right center;
+
+    height: 95vh;
+}

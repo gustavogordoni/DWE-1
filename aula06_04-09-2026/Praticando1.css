@@ -1,0 +1,86 @@
+.bg-cinza{
+    background-color: #878787;
+}
+
+.bg-vermelho{
+    background-color: red;
+}
+.bg-verde{
+    background-color: green;
+}
+.bg-azul{
+    background-color: blue;
+}
+.bg-amarelo{
+    background-color:yellow;
+}
+.bg-laranja{
+    background-color: orange;
+}
+
+.bg-vermelho-claro{
+    background-color: #ffb3b3;
+    color: rgb(107, 7, 7);
+}
+.bg-verde-claro{
+    background-color: #b5ffb4;
+    color: #076805;
+}
+.bg-azul-claro{
+    background-color: #b4b3ff;
+    color: #4444c4;
+}
+.bg-amarelo-claro{
+    background-color: #feffb3;
+    color: rgb(105, 105, 26);
+}
+.bg-laranja-claro{
+    background-color: #ffd8b4;
+     color: rgb(190, 124, 1);
+}
+
+.border-vermelho{
+    border: solid 5px red;
+}
+.border-verde{
+    border: solid 5px green;
+}
+.border-azul{
+    border: solid 5px blue;
+}
+.border-amarelo{
+    border: solid 5px yellow;
+}
+.border-laranja{
+    border: solid 5px orange;
+}
+
+
+
+
+
+.bg-ciano{
+    background-color: #aed8e6;
+}
+.bg-vermelho-claro2{
+    background-color: #f0807f;
+}
+
+.bg-image{
+    background-image: url(imagens/Eder-Perfil-3.jpg);
+    background-size: 8%;
+
+    color: yellow;
+}
+
+.bg-aqua{
+    background-color: rgb(0, 247, 132,0.5);
+}
+#body{
+    background-image: url(imagens/Eder-Perfil-3.jpg);
+    background-size: 20%;
+    background-repeat: no-repeat;
+
+    background-position: bottom right;
+    height: 100vh;
+}

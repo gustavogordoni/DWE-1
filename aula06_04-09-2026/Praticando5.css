@@ -1,0 +1,54 @@
+body {
+    background-color: #82cafa;
+}
+
+section {
+    border: solid 1px black;
+    background-color: #d3d3d3;
+}
+
+#text-opacity p{
+    background-color: green;
+}
+
+/* #bg-rgba p{
+    background-color: green;
+} */
+
+#opacity-1 {
+    opacity: 1.0;
+}
+#opacity-2 {
+    opacity: 0.8;
+}
+#opacity-3 {
+    opacity: 0.6;
+}
+#opacity-4 {
+    opacity: 0.4;
+}
+#opacity-5 {
+    opacity: 0.2;
+}
+
+#rgba-1 {
+    background-color: rgba(0, 128, 0, 0.8);
+}
+#rgba-2 {
+    background-color: rgba(0, 128, 0, 0.6);
+}
+#rgba-3 {   
+    background-color: rgba(0, 128, 0, 0.4);
+}
+#rgba-4 {
+    background-color: rgba(0, 128, 0, 0.2);
+}
+
+img {
+  opacity: 0.5;
+}
+
+img:hover {
+  opacity: 1.0;
+  outline: 5px solid blue;
+} 
