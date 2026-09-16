@@ -27,11 +27,11 @@ figcaption {
 }
 
 figure img {
-    border: 6px double #6f42c1;
+    border: double 6px #6f42c1;
 }
 
 footer {
-    border-top: 3px solid #6f42c1;
+    border-top: solid 3px #6f42c1;
     background-color: #2d2438;
     color: #e9ecef;
     text-align: center;
