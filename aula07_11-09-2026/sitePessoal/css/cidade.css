@@ -1,4 +1,4 @@
 #mapa {
-    border: 6px double #6f42c1;
     display: inline-block;
+    border: double 6px #6f42c1;
 }

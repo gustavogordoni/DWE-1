@@ -1,8 +1,8 @@
 iframe{
+    display: block;
     border: none;
     margin-left: auto;
     margin-right: auto;
-    display: block;
 }
 
 main nav {

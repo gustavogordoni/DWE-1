@@ -1,5 +1,5 @@
 details {
-    border: 6px dotted #6f42c1;
+    border: dotted 6px #6f42c1;
     padding: 12px 16px;
     margin: 16px 0;
     background-color: #2d2438;
@@ -8,11 +8,6 @@ details {
 summary {
     font-weight: bold;
     color: #c9a0ff;
-    cursor: pointer;
-}
-
-summary:hover {
-    color: #8b5cf6;
 }
 
 details strong {
