@@ -1,0 +1,109 @@
+body {
+    background-color: #1a1625;
+    color: #e9ecef;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Noto Sans", sans-serif;
+    color: #c9a0ff;
+}
+
+p,
+li {
+    font-family: "Roboto", sans-serif;
+}
+
+figure {
+    display: inline-block;
+    margin-top: 0;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    color: #b8a9c9;
+}
+
+figure img {
+    border: 6px double #6f42c1;
+}
+
+footer {
+    border-top: 3px solid #6f42c1;
+    background-color: #2d2438;
+    color: #e9ecef;
+    text-align: center;
+    padding-bottom: 6px;
+}
+
+abbr {
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #8b5cf6;
+}
+
+a {
+    color: #a370f7;
+}
+
+a:visited {
+    color: #6f42c1;
+}
+
+mark{
+    background-color: #c9a0ff;
+    color: #1a1625;
+    padding: 2px 4px;
+}
+
+blockquote,
+blockquote p {
+    font-style: italic;
+    color: #d8c9e8;
+}
+
+/* Navegação */
+a:hover,
+abbr:hover,
+nav li:hover {
+    color: #1a1625;
+    outline: 2px dashed #8b5cf6;
+    background-color: #c9a0ff;
+    border-color: #8b5cf6;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav li {
+    padding: 6px;
+    display: inline-block;
+    border: 5px double #6f42c1;
+    background-color: #2d2438;
+}
+
+nav a {
+    color: #e9ecef;
+    text-decoration: none;
+}
+
+nav a:hover {
+    outline: none;
+}
+
+.voltar {
+    display: inline-block;
+    background-color: #2d2438;
+    color: #c9a0ff;
+    padding: 4px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    background-color: #c9a0ff;
+    color: #1a1625;
+}
