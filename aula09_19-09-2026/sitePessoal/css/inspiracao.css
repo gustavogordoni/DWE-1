@@ -1,0 +1,14 @@
+#citacoes blockquote {
+    background-color: #2d2438;
+
+    padding: 16px 20px;
+    margin: 20px 0;
+}
+
+#citacoes cite {
+    display: block;
+    text-align: right;
+    color: #a370f7;
+    
+    font-size: 1.2vw;
+}
