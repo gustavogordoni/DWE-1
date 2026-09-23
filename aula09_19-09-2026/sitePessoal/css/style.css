@@ -1,6 +1,8 @@
 body {
     background-color: #1a1625;
     color: #e9ecef;
+    /* border: 1px solid black; */
+    padding: 0 2vw 0 2vw;
 }
 
 h1,
@@ -15,9 +17,16 @@ li {
     font-family: "Roboto", sans-serif;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
 figure {
     display: inline-block;
-    margin-top: 0;
+    max-width: 100%;
+    margin: 0 0 16px 0;
 }
 
 figcaption {
@@ -52,7 +61,7 @@ a:visited {
     color: #6f42c1;
 }
 
-mark{
+mark {
     background-color: #c9a0ff;
     color: #1a1625;
     padding: 2px 4px;
@@ -75,22 +84,30 @@ nav li:hover {
 }
 
 nav ul {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 16px 0;
 }
 
 nav li {
-    padding: 6px;
-    display: inline-block;
+    list-style: none;
+    margin: 4px 0;
+    text-align: center;
     border: 5px double #6f42c1;
     background-color: #2d2438;
 }
 
-nav a {
+nav a,
+nav a:visited {
+    display: block;
+    padding: 6px;
     color: #e9ecef;
     text-decoration: none;
 }
 
 nav a:hover {
+    color: #1a1625;
     outline: none;
 }
 
@@ -106,4 +123,46 @@ nav a:hover {
 .voltar:hover {
     background-color: #c9a0ff;
     color: #1a1625;
+}
+
+
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil figure {
+    align-self: center;
+}
+
+@media (min-width: 768px) {
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 4px;
+    }
+
+    .perfil {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .perfil figure {
+        align-self: flex-start;
+        margin: auto 24px;
+    }
+
+    .perfil-texto {
+        flex-grow: 1;
+    }
+}
+
+figure.centro {
+    display: block;
+    text-align: center;
 }

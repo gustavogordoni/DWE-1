@@ -1,0 +1,265 @@
+.desktop {
+    display: none;
+}
+
+/* acaoes */
+.botao,
+.botao:visited {
+    display: block;
+    text-align: center;
+    background-color: #c9a0ff;
+    color: #1a1625;
+
+    padding: 12px 20px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    border-radius: 6px;
+
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: #e9ecef;
+    color: #1a1625;
+}
+
+
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 16px 0;
+
+    border-bottom: 3px solid #6f42c1;
+}
+
+.hero-texto {
+    width: 100%;
+}
+
+.hero-imagem {
+    /* margin-top: 16px;
+    margin-bottom: 0; */
+
+    margin: 16px;
+}
+
+
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* beneficios celular empilhar */
+.cards {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.cards li {
+    list-style: none;
+    background-color: #2d2438;
+    border: 5px double #6f42c1;
+
+
+    padding: 4px 12px;
+    margin-bottom: 12px;
+}
+
+.cards h3 {
+    margin: 8px 0;
+}
+
+.detalhe {
+    display: none;
+}
+
+
+
+
+.depoimentos-lista {
+    display: flex;
+    flex-direction: column;
+}
+
+.depoimento {
+    background-color: #2d2438;
+    border-left: 6px solid #6f42c1;
+
+
+    padding: 4px 16px;
+    margin-bottom: 12px;
+}
+
+.autor {
+    text-align: right;
+    color: #a370f7;
+}
+
+
+
+
+
+details {
+    border: 4px dotted #6f42c1;
+    /* padding: 8px 16px 8px 12px; */
+    padding: 8px 16px 8px 16px;
+
+    margin: 12px 0;
+    background-color: #2d2438;
+}
+
+summary {
+    font-weight: bold;
+    color: #c9a0ff;
+}
+
+
+
+
+#preco {
+    background-color: #2d2438;
+    border: 5px double #6f42c1;
+
+
+    padding: 8px 16px 16px 16px;
+    margin-top: 16px;
+
+    text-align: center;
+}
+
+.preco-antigo {
+    text-decoration: line-through;
+    color: #b8a9c9;
+    margin-bottom: 0;
+}
+
+.preco-valor {
+    font-size: 2.2em;
+    font-weight: bold;
+
+
+    color: #c9a0ff;
+    margin-top: 0;
+}
+
+.aviso {
+    font-size: 0.85em;
+    font-style: italic;
+
+    color: #b8a9c9;
+}
+
+/* celular */
+.barra-compra {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: #2d2438;
+    border-top: 3px solid #6f42c1;
+    padding: 8px 12px;
+
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+/* 768px desktop */
+@media (min-width: 768px) {
+    body {
+        padding-bottom: 0;
+    }
+
+    .barra-compra {
+        display: none;
+    }
+
+    .desktop {
+        display: block;
+    }
+
+    .detalhe {
+        display: block;
+    }
+
+    .botao,
+    .botao:visited {
+        display: inline-block;
+    }
+
+
+    /* hero duas colunas */
+    #hero {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+    }
+
+    /* .hero-texto {       
+        margin-right: 24px;
+    } */
+
+    .hero-imagem {
+        margin: 0;
+    }
+
+
+    .cards {
+        flex-direction: row;
+    }
+
+    .cards li {
+        width: 0;
+        flex-grow: 1;
+        margin: 0 6px 12px 6px;
+        /* padding: 4px 12px; */
+        padding: 4px 12px 12px 12px;
+    }
+
+
+
+    .depoimentos-lista {
+        flex-direction: row;
+    }
+
+    .depoimento {
+        width: 0;
+        flex-grow: 1;
+        margin: 0 6px 12px 6px;
+    }
+}
+
+/* 1024px desktop coluna principal */
+@media (min-width: 1024px) {
+    .conteudo {
+        flex-direction: row;
+        align-items: flex-start;
+        /* max-width: 72em; */
+        max-width: 64em;
+        /* margin: auto; */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .principal {
+        width: 0;
+        flex-grow: 1;
+    }
+
+    #preco {
+        width: 16em;
+        margin-top: 50px;
+        margin-left: 24px;
+        position: sticky;
+    }
+}

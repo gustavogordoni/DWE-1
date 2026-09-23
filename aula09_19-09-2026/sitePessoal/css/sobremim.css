@@ -1,3 +1,12 @@
+/* .perfil {
+    display: flex;
+    flex-direction: column;
+}
+
+.perfil figure {
+    align-self: center;
+} */
+
 details {
     border: dotted 6px #6f42c1;
     padding: 12px 16px;
@@ -14,8 +23,7 @@ details strong {
     color: #a370f7;
 }
 
-
-#contatos ul {    
+#contatos ul {
     padding: 0;
     margin-top: 12px;
 }
@@ -23,4 +31,20 @@ details strong {
 #contatos li {
     padding: 8px 0;
     border-bottom: 1px solid #2d2438;
+}
+
+@media (min-width: 768px) {
+    /* .perfil {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .perfil figure {
+        align-self: flex-start;
+        margin-right: 24px;
+    } */
+
+    /* .perfil-texto {
+        flex-grow: 1;
+    } */
 }

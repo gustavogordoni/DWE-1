@@ -1,4 +1,11 @@
 #mapa {
-    display: inline-block;
+    display: block;
+    max-width: 40em;
     border: double 6px #6f42c1;
+}
+
+#mapa iframe {
+    display: block;
+    width: 100%;
+    border: none;
 }
