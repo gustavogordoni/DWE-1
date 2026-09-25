@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 1 - Grid & Flex</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            display: grid;
+
+            grid-template-areas:
+                'cabecalho cabecalho cabecalho cabecalho cabecalho cabecalho'
+                'menu menu menu menu menu menu'
+                'conteudo conteudo conteudo conteudo lateral lateral'
+                'rodape rodape rodape rodape rodape rodape';
+
+            gap: 1rem;
+        }
+
+        header {
+            grid-area: cabecalho;
+            border: 1px solid black;
+            padding: 3rem;
+        }
+
+        nav {
+            grid-area: menu;
+            border: 1px solid black;
+            padding: 3rem;
+        }
+
+        main {
+            grid-area: conteudo;
+            border: 1px solid black;
+            padding: 3rem;
+
+            display: grid;
+
+            /* 
+            grid-template-areas:
+                'destaque destaque comum comum comum'
+                'comum comum comum comum comum' 
+            */
+
+            grid-template-columns: repeat(5, 1fr);
+
+            gap: 1rem;
+        }
+
+        aside {
+            grid-area: lateral;
+            border: 1px solid black;
+            padding: 3rem;
+        }
+
+        footer {
+            grid-area: rodape;
+            border: 1px solid black;
+            padding: 3rem;
+        }
+
+        .card {
+            border: 1px solid black;
+            padding: 3rem;
+        }
+
+        .card.destaque {
+            grid-column: span 2;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="cabecalho"></header>
+    <nav></nav>
+    <main>
+        <div class="card destaque"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </main>
+    <aside></aside>
+
+    <footer></footer>
+
+</body>
+
+</html>

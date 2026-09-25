@@ -1,0 +1,235 @@
+body {
+    display: grid;
+
+    grid-template-areas:
+        'cabecalho cabecalho cabecalho cabecalho cabecalho cabecalho'
+        'menu menu menu menu menu menu'
+        'conteudo conteudo conteudo conteudo lateral lateral'
+        'rodape rodape rodape rodape rodape rodape';
+    /* gap: 1rem; */
+
+    background-color: #ffffff;
+    font-family: "Nunito", Arial, sans-serif;
+
+    margin: 0;
+}
+
+header {
+    grid-area: cabecalho;
+    /* border: 1px solid black; */
+    padding: 1rem;
+
+    background-color: #3e2a20;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    grid-area: menu;
+    /* border: 1px solid black; */
+    padding: 1rem;
+
+    background-color: #e3f1ec;
+
+    display: flex;
+    justify-content: space-evenly;
+
+    border-bottom: 3px solid #2f7d6d;
+}
+
+nav a {
+    color: #3e2a20;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.3em;
+    /* padding: 1vw; */
+
+    padding: 0.5em;
+}
+
+nav a:hover {
+    background-color: #2f7d6d;
+    border-radius: 7px;
+    color: white;
+}
+
+main {
+    /* border: 1px solid black; */
+    padding: 1rem;
+
+    display: grid;
+
+    /* 
+    grid-template-areas:
+        'destaque destaque comum comum comum'
+        'comum comum comum comum comum' 
+    */
+
+    grid-template-columns: repeat(5, 1fr);
+
+    gap: 1rem;
+}
+
+aside {
+    grid-area: lateral;
+    /* border: 1px solid black; */
+    padding: 1rem;
+
+    border-left: solid 3px #2f7d6d;
+}
+
+footer {
+    grid-area: rodape;
+    /* border: 1px solid black; */
+    padding: 1rem;
+
+    background-color: #3e2a20;
+}
+
+
+.card {
+    border: 1px solid #cfe3db;
+    padding: 1rem;
+    border-radius: 10px;
+
+    text-align: center;
+}
+
+.card:hover {
+    background-color: #b8f7ea;
+    /* border-color: #2f7d6d;
+    border-width: 5px; */
+
+    outline: 4px #2f7d6d solid;
+}
+
+.card.destaque {
+    grid-column: span 2;
+    border-color: #2f7d6d;
+    border-width: 2px;
+
+    background-color: #e3f1ec;
+}
+
+
+footer h3 {
+    color: #8fd3bf;
+}
+
+footer p {
+    color: white;
+    /* border: 1px solid white; */
+    margin-top: 0;
+    margin-bottom: 5px;
+
+
+}
+
+.complementos {
+    display: flex;
+
+    justify-content: space-around;
+    margin-bottom: 1vw;
+}
+
+#desc-atividade {
+    text-align: center;
+}
+
+p {
+    color: #2b2b2b;
+}
+
+header h1 {
+    color: white;
+    font-size: 2em;
+}
+
+figure {
+    font-size: 2vw;
+}
+
+header button {
+    background-color: #3e2a20;
+    border: white solid 3px;
+    color: white;
+
+    padding: 1vw;
+    font-size: 1em;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+header button:hover {
+    background-color: white;
+    color: #3e2a20;
+}
+
+#logotipo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nome {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.preco {
+    color: #2f7d6d;
+    font-weight: bold;
+}
+
+
+
+/* Utilizei da IA para me ajudar a gerar essa Media Query!!!! */
+@media (max-width: 768px) {
+
+    body {
+        grid-template-areas:
+            'cabecalho'
+            'menu'
+            'conteudo'
+            'lateral'
+            'rodape';
+    }
+
+    header {
+        flex-direction: column;
+        gap: 0.8rem;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    .card.destaque {
+        grid-column: span 1;
+    }
+
+    aside {
+        border-left: none;
+        border-top: solid 3px #2f7d6d;
+    }
+
+    .complementos {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    figure {
+        font-size: 8vw;
+    }
+}

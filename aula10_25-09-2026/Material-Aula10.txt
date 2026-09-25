@@ -1,0 +1,163 @@
+==============================================================
+ PRATICANDO - GRID E FLEXBOX
+ Material de apoio: textos, fonte e paleta de cores
+ Desenvolvimento Web 1 - IFSP Votuporanga
+==============================================================
+
+Este arquivo traz o conteúdo do site "Café da Esquina" para
+você não perder tempo digitando textos. A estrutura HTML e o
+CSS ficam por sua conta.
+
+
+--------------------------------------------------------------
+ 1. FONTE (Google Fonts)
+--------------------------------------------------------------
+
+Fonte usada: Nunito (pesos 400, 700 e 800)
+
+Colar dentro do <head>, ANTES do link para o seu arquivo CSS:
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+No CSS (não esqueça da fonte de fallback):
+
+font-family: "Nunito", Arial, sans-serif;
+
+
+--------------------------------------------------------------
+ 2. PALETA DE CORES
+--------------------------------------------------------------
+
+#3e2a20   Marrom café      fundo do cabeçalho e do rodapé
+#2f7d6d   Verde            preços, bordas de destaque, hover do menu
+#e3f1ec   Verde claro      fundo do menu e do card em destaque
+#8fd3bf   Verde menta      títulos do rodapé e contorno de foco
+#cfe3db   Verde acinzentado  borda dos cards comuns
+#2b2b2b   Cinza escuro     cor do texto
+#ffffff   Branco           fundo da página e texto sobre o marrom
+#6b5447   Marrom claro     linha divisória no rodapé
+
+As sugestões de uso são só referência. Você pode distribuir as
+cores de outra forma, desde que use a paleta de modo consistente.
+
+
+--------------------------------------------------------------
+ 3. TEXTOS DO SITE
+--------------------------------------------------------------
+
+[ TOPO DA PÁGINA ]
+
+Ícone: ☕
+Nome do site: Café da Esquina
+Botão: Fazer pedido  (leva até a área de contato)
+
+
+[ MENU DE NAVEGAÇÃO ]
+
+Início
+Cardápio
+Sobre
+Contato
+
+
+[ CONTEÚDO PRINCIPAL ]
+
+Título: Cardápio
+
+Card 1 (EM DESTAQUE, ocupa mais espaço que os outros)
+  Ícone: ☕🍰
+  Nome: Especial da casa
+  Preço: R$ 18,00
+  Descrição: Cappuccino cremoso acompanhado de uma fatia de bolo
+  de cenoura com cobertura de chocolate.
+
+Card 2
+  Ícone: ☕
+  Nome: Espresso
+  Preço: R$ 6,00
+  Descrição: Café curto e encorpado.
+
+Card 3
+  Ícone: 🥛
+  Nome: Café com leite
+  Preço: R$ 7,50
+  Descrição: Na xícara grande, do jeito tradicional.
+
+Card 4
+  Ícone: 🍫
+  Nome: Mocha
+  Preço: R$ 11,00
+  Descrição: Espresso, chocolate e leite vaporizado.
+
+Card 5
+  Ícone: 🍹
+  Nome: Café gelado
+  Preço: R$ 10,00
+  Descrição: Para os dias quentes do noroeste paulista.
+
+Card 6
+  Ícone: 🧀
+  Nome: Pão de queijo
+  Preço: R$ 5,00
+  Descrição: Porção com 4 unidades, sai quentinho.
+
+Card 7
+  Ícone: 🥐
+  Nome: Croissant
+  Preço: R$ 9,00
+  Descrição: Simples ou recheado com presunto e queijo.
+
+Card 8
+  Ícone: 🍪
+  Nome: Cookie
+  Preço: R$ 6,50
+  Descrição: Com gotas de chocolate meio amargo.
+
+Card 9
+  Ícone: 🍵
+  Nome: Chá
+  Preço: R$ 6,00
+  Descrição: Camomila, hortelã ou erva-doce.
+
+
+[ BOX LATERAL ]
+
+Título: Sobre nós
+Texto: Somos uma cafeteria pequena, com grãos torrados toda
+semana e receitas feitas na hora.
+
+Subtítulo: Horário
+  Segunda a sexta: 7h às 19h
+  Sábado: 8h às 14h
+  Domingo: fechado
+
+
+[ RODAPÉ ]
+
+Bloco 1
+  Título: Endereço
+  Rua das Flores, 123
+  Centro
+
+Bloco 2
+  Título: Contato
+  (17) 99999-0000
+  contato@cafedaesquina.com
+
+Bloco 3
+  Título: Redes sociais
+  @cafedaesquina
+
+Linha final:
+  Praticando de Grid e Flexbox. Desenvolvimento Web 1, [Seu Nome]
+
+
+--------------------------------------------------------------
+ DICA
+--------------------------------------------------------------
+
+Os ícones são emojis: basta copiar e colar o caractere no HTML,
+como se fosse texto. A aparência deles muda conforme o sistema
+operacional (Windows, Android, iPhone), e isso é normal.
