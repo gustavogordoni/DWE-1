@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submeta o seu mod</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+</head>
+
+<body class="container">
+    <header class="d-flex justify-content-center py-3 border-bottom mb-4">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="intro.html" class="nav-link" >O que é um mod?</a></li>
+            <li class="nav-item"><a href="criar.html" class="nav-link">Como criar um mod</a></li>
+            <li class="nav-item"><a href="formulario.html" class="nav-link active rounded-pill">Submeta o seu mod</a>
+                <li class="nav-item"><a href="curiosidade.html" class="nav-link">Curiosidade</a></li>
+            </li>
+        </ul>
+    </header>
+
+    <h1>Submeta o seu mod</h1>
+
+    <p>Preencha os dados abaixo para enviar sua modificação para a plataforma. Todos os campos marcados são
+        obrigatórios.</p>
+
+    <div class="row g-5">
+        <div class="col-md-12 col-lg-12">
+            <!-- <h4 class="mb-3 text-center">Dados do mod</h4> -->
+
+            <form class="needs-validation" action="" novalidate>
+                <div class="row g-3">
+
+                    <div class="col-sm-6">
+                        <label for="modName" class="form-label">Nome do mod</label>
+                        <input type="text" class="form-control" id="modName" name="modName"
+                            placeholder="Ex.: Canhão de Corda Infinita" required>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <label for="teamName" class="form-label">Nome do time</label>
+                        <input type="text" class="form-control" id="teamName" name="teamName" required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="email" class="form-label">E-mail para contato</label>
+                        <div class="input-group has-validation">
+                            <span class="input-group-text">@</span>
+                            <input type="email" class="form-control" id="email" name="email"
+                                placeholder="contato@exemplo.com" required>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="telefone" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="telefone" name="telefone"
+                            placeholder="(99) 99999-9999" required>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="repository" class="form-label">Link do repositório</label>
+                        <input type="url" class="form-control" id="repository" name="repository"
+                            placeholder="https://github.com/usuario/meu-mod" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="jogadores" class="form-label">Nº de jogadores suportados</label>
+                        <input type="number" class="form-control" id="jogadores" name="jogadores" min="1" max="32"
+                            placeholder="Ex.: 4" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="data" class="form-label">Data de lançamento</label>
+                        <input type="date" class="form-control" id="data" name="data" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="arquivo" class="form-label">Arquivo do mod (.zip)</label>
+                        <input type="file" class="form-control" id="arquivo" name="arquivo" accept=".zip" required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="categoria" class="form-label">Categoria</label>
+                        <select class="form-select" id="categoria" name="categoria" required>
+                            <option value="">-</option>
+                            <option value="cosmetico">Cosmético</option>
+                            <option value="gameplay">Gameplay</option>
+                            <option value="itens">Itens</option>
+                            <option value="interface">Interface</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="descricao" class="form-label">Descrição do mod</label>
+                        <textarea class="form-control" id="descricao" name="descricao" rows="4"
+                            placeholder="Explique o que o mod faz" required></textarea>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="form-label mb-2">Tipo de instalação</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="instalacao" id="instCliente"
+                                value="cliente" checked required>
+                            <label class="form-check-label" for="instCliente">Apenas cliente</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="instalacao" id="instTodos" value="todos"
+                                required>
+                            <label class="form-check-label" for="instTodos">Todos os jogadores precisam instalar</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p class="form-label mb-2">Recursos do mod</p>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="recursos" id="recItens" value="itens">
+                            <label class="form-check-label" for="recItens">Novos itens</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="recursos" id="recTexturas"
+                                value="texturas">
+                            <label class="form-check-label" for="recTexturas">Novas texturas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="recursos" id="recSom" value="som">
+                            <label class="form-check-label" for="recSom">Novo som</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="recursos" id="recDificuldade"
+                                value="dificuldade">
+                            <label class="form-check-label" for="recDificuldade">Ajusta dificuldade</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="recursos" id="recMulti"
+                                value="multiplayer">
+                            <label class="form-check-label" for="recMulti">Funciona em multiplayer</label>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <div class="d-flex justify-content-around">
+                    <button class="w-25 btn btn-warning btn-md" type="reset">Limpar formulário</button>
+                    <button class="w-25 btn btn-primary btn-md" type="submit">Enviar mod</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2026 Gustavo Luiz Gordoni</p>
+
+        <ul class="nav col-md-8 justify-content-end fs-6">
+            <li class="nav-item"><a href="intro.html" class="nav-link px-2 text-body-secondary">O que é um mod em PEAK?</a></li>
+            <li class="nav-item"><a href="criar.html" class="nav-link px-2 text-body-secondary">Como criar um mod em PEAK</a></li>
+            <li class="nav-item"><a href="formulario.html" class="nav-link px-2 text-body-secondary">Submeta o seu mod</a></li>
+            <li class="nav-item"><a href="curiosidade.html" class="nav-link px-2 text-body-secondary">Curiosidade</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>

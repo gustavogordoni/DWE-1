@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curiosidade: o meu primeiro mod em PEAK</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+</head>
+
+<body class="container">
+    <header class="d-flex justify-content-center py-3 border-bottom mb-4">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a href="intro.html" class="nav-link">O que é um mod?</a></li>
+            <li class="nav-item"><a href="criar.html" class="nav-link">Como criar um mod</a></li>
+            <li class="nav-item"><a href="formulario.html" class="nav-link">Submeta o seu mod</a></li>
+            <li class="nav-item"><a href="curiosidade.html" class="nav-link active rounded-pill">Curiosidade</a></li>
+        </ul>
+    </header>
+
+    <h1>Curiosidade: o meu primeiro mod</h1>
+
+    <p>Eu também criei um mod para PEAK. É o meu primeiro e, até agora, o único: o <a
+            href="https://thunderstore.io/c/peak/p/afxgg/PeakChatTranslator/"><strong>PeakChatTranslator</strong></a>,
+        publicado na Thunderstore.</p>
+
+    <figure class="text-center">
+        <img src="img/thumb.png" class="img-fluid rounded-5 border border-primary border-3" alt="Thumbnail do PeakChatTranslator na Thunderstore">
+    </figure>
+
+    <section class="my-4">
+        <h2 class="h3">Antes de tudo</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">O chat de texto não é nativo</h3>
+                        <p class="card-text">O PEAK original não tem chat de texto. Quem adiciona essa função é outro
+                            mod, o <a href="https://thunderstore.io/c/peak/p/borealityy/PeakTextChat/">PeakTextChat</a>.
+                        </p>
+                        <p class="card-text mb-0">O meu mod não cria o chat. Ele trabalha por cima do PeakTextChat,
+                            traduzindo as mensagens que passam por ele. Por isso o PeakTextChat é uma dependência
+                            obrigatória.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <h3 class="h5 card-title">Onde ele é mais útil: lobbies públicos</h3>
+                        <p class="card-text">No jogo base, só dá para jogar com outras pessoas por convite de amigos
+                            na Steam ou pelo código da sala. Ou seja, quase sempre com quem você já conhece.</p>
+                        <p class="card-text mb-0">Mods como o <a
+                                href="https://thunderstore.io/c/peak/p/Isotope/PEAKLobbyBrowser/">PEAKLobbyBrowser</a>
+                            permitem listar e entrar em salas públicas. É ali, jogando com desconhecidos de vários
+                            países, que a tradução do chat mais faz diferença.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-4">
+
+    <section class="my-4">
+        <div class="row align-items-center g-4">
+            <div class="col-md-6">
+                <h2 class="h3">O que o mod faz</h2>
+                <p>PEAK é um jogo que precisa de bastante comunicação, mas nem sempre todo mundo fala o mesmo idioma.
+                    O PeakChatTranslator traduz automaticamente o chat de texto (via PeakTextChat), usando o Google
+                    Translate (com o MyMemory como reserva).</p>
+                <p>Toda mensagem de outro jogador é traduzida para o seu idioma. A mensagem original continua
+                    visível e a tradução aparece logo abaixo, com o prefixo <code>[TR]</code>.</p>
+            </div>
+            <div class="col-md-6 text-center">
+                <figure class="mb-0">
+                    <img src="https://raw.githubusercontent.com/gustavogordoni/PeakChatTranslator/refs/heads/main/screenshots/englishTranslatedInto%20Portuguese.png"
+                        class="img-fluid border border-primary border-3"
+                        alt="Mensagem em inglês recebida no chat de PEAK, com a tradução para português logo abaixo">
+                    <figcaption class="form-text mt-2">Mensagem recebida em inglês, traduzida automaticamente para
+                        português.</figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-4">
+
+    <section class="my-4">
+        <div>
+            <h2 class="h3">Enviando mensagens traduzidas</h2>
+            <p>Quem quer escrever no próprio idioma usa o comando <code>/tr</code> seguido da mensagem, digitado no
+                chat do PeakTextChat. Só a versão traduzida vai para o chat; o texto original é bloqueado.</p>
+            <p>Também dá para sussurrar com tradução: <code>/tr /w jogador mensagem</code> (usa a integração com o
+                mod opcional TinyTweaks).</p>
+        </div>
+        <div>
+            <div class="row g-3 text-center">
+                <div class="col-sm-6">
+                    <figure class="mb-0">
+                        <img src="https://raw.githubusercontent.com/gustavogordoni/PeakChatTranslator/refs/heads/main/screenshots/originalSentencePortuguese.png"
+                            class="img-fluid border border-primary border-3"
+                            alt="Frase original digitada em português com o comando /tr">
+                        <figcaption class="form-text mt-2">Antes: você digita no seu idioma.</figcaption>
+                    </figure>
+                </div>
+                <div class="col-sm-6">
+                    <figure class="mb-0">
+                        <img src="https://raw.githubusercontent.com/gustavogordoni/PeakChatTranslator/refs/heads/main/screenshots/translatedIntoEnglish.png"
+                            class="img-fluid border border-primary border-3"
+                            alt="Mensagem já traduzida para inglês, enviada ao chat">
+                        <figcaption class="form-text mt-2">Depois: o chat recebe a versão traduzida.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-4">
+
+    <section class="my-4">
+        <h2 class="h3">Principais configurações</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th>Seção</th>
+                        <th>Opção</th>
+                        <th>O que faz</th>
+                        <th>Padrão</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>General</td>
+                        <td>Target Language</td>
+                        <td>Seu idioma: o que você lê e escreve</td>
+                        <td>English (en)</td>
+                    </tr>
+                    <tr>
+                        <td>Display</td>
+                        <td>Translation Prefix</td>
+                        <td>Prefixo exibido antes da tradução</td>
+                        <td>TR</td>
+                    </tr>
+                    <tr>
+                        <td>Display</td>
+                        <td>Translation Color</td>
+                        <td>Cor da tradução no chat (hexadecimal)</td>
+                        <td>#7FC8FF</td>
+                    </tr>
+                    <tr>
+                        <td>Outgoing</td>
+                        <td>Translate My Messages To</td>
+                        <td>Idioma em que os outros recebem suas mensagens</td>
+                        <td>English (en)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <hr class="my-4">
+
+    <section class="my-4">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <h2 class="h3">Dependências</h2>
+                <ol class="list-group list-group-numbered">
+                    <li class="list-group-item"><a
+                            href="https://thunderstore.io/c/peak/p/BepInEx/BepInExPack_PEAK/">BepInExPack_PEAK</a>
+                        (carregador de mods)</li>
+                    <li class="list-group-item"><a
+                            href="https://thunderstore.io/c/peak/p/borealityy/PeakTextChat/">PeakTextChat</a>
+                        (o chat de texto sobre o qual o mod funciona)</li>
+                    <li class="list-group-item"><a
+                            href="https://thunderstore.io/c/peak/p/YonDev/TinyTweaks/">TinyTweaks</a>
+                        (opcional, para sussurros)</li>
+                </ol>
+            </div>
+            <div class="col-md-6">
+                <h2 class="h3">Como o mod foi feito</h2>
+                <div class="alert alert-info mb-0">
+                    <p>Sendo transparente: o projeto foi desenvolvido quase inteiramente com ajuda de IA (ferramenta
+                        <em>opencode</em>, modelo Nemotron 3 Ultra Free). O código C#, os <em>patches</em> Harmony e a
+                        documentação foram gerados e refinados por <em>prompts</em>.
+                    </p>
+                    <p class="mb-0">A minha parte foi revisar os requisitos, testar no jogo, decidir a experiência de
+                        uso (menus, comandos, cores) e publicar. Por isso o mod aparece na Thunderstore com a categoria
+                        <strong>AI Generated</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-4">
+
+    <section class="my-4 text-center">
+        <p>O mod está disponível na Thunderstore e o código é aberto.</p>
+        <a href="https://thunderstore.io/c/peak/p/afxgg/PeakChatTranslator/" class="btn btn-primary me-2 mb-2">Ver na
+            Thunderstore</a>
+        <a href="https://github.com/gustavogordoni/PeakChatTranslator" class="btn btn-warning mb-2">Ver
+            no GitHub</a>
+    </section>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">&copy; 2026 Gustavo Luiz Gordoni</p>
+
+        <ul class="nav col-md-8 justify-content-end fs-6">
+            <li class="nav-item"><a href="intro.html" class="nav-link px-2 text-body-secondary">O que é um mod em PEAK?</a></li>
+            <li class="nav-item"><a href="criar.html" class="nav-link px-2 text-body-secondary">Como criar um mod em PEAK</a></li>
+            <li class="nav-item"><a href="formulario.html" class="nav-link px-2 text-body-secondary">Submeta o seu mod</a></li>
+            <li class="nav-item"><a href="curiosidade.html" class="nav-link px-2 text-body-secondary">Curiosidade</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+
+</html>
