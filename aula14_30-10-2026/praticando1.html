@@ -8,39 +8,45 @@
     <link rel="stylesheet" href="../assets/bootstrap.css">
 </head>
 
-<body>
+<body class="container">
     <h1><strong>Praticando 1 - JavaScript</strong></h1>
 
     <h2 id="welcome">Seja bem-vindo</h2>
 
-    <button onclick="add()">Adicionar texto (parágrafo de Lorem Ipsum)</button>
+    <br>
+    <button class="btn btn-primary" onclick="add()">Adicionar texto (parágrafo de Lorem Ipsum)</button>
     <br><br>
-    <button onclick="removeAll()">Remover texto (todos os parágrafos)</button>
+    <button class="btn btn-primary" onclick="removeAll()">Remover texto (todos os parágrafos)</button>
 
     <br><br><br>
-    <div id="paragraphs">
-    </div>
+    <div id="textos"></div>
 
     <script>
-        let text;
-        let name = prompt("Qual é o seu nome?");
-        text = "Seja bem-vindo <strong>" + name + "<strong>";
+        const nome = prompt("Qual é o seu nome?");
 
-        document.getElementById("welcome").innerHTML = text;
+        if (nome !== null && nome.trim() !== "") {
+            const welcome = document.getElementById("welcome");
+            const strong = document.createElement("strong");
+            strong.textContent = nome;
 
-        function add(){
-            const Modif = document.getElementById('paragraphs')
-
-            var addP = document.createElement('p')
-            addP.textContent = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi expedita minus corrupti pariatur nobis earum natus iusto consectetur, laborum saepe voluptatibus.'
-            addP.style.fontSize = "20px"
-
-            Modif.appendChild(addP)
+            welcome.textContent = "Seja bem-vindo ";
+            welcome.appendChild(strong);
         }
 
-        function removeAll(){
-            var removeAll = document.getElementById('paragraphs')
-            removeAll.innerHTML = ''
+        function add() {
+            const textos = document.getElementById("textos");
+
+            const p = document.createElement("p");
+            p.textContent = "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi expedita minus corrupti pariatur nobis earum natus iusto consectetur, laborum saepe voluptatibus.";
+            p.style.fontSize = "20px";
+
+            textos.appendChild(p);
+        }
+
+        function removeAll() {
+            document.querySelectorAll("#textos p").forEach(function (p) {
+                p.remove();
+            });
         }
     </script>
 </body>
