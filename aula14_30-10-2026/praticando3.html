@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 3</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+
+     <style>
+        main div{
+            width: 7vw;
+            height: 7vw;
+            border: solid 5px black;
+        }
+    </style>
+
+</head>
+<body class="container-fluid">
+    <h1><strong>Praticando 3 - JavaScript - Cores (click e mouse)</strong></h1>
+
+    <main class="d-flex justify-content-around ">
+        <div class="border border-3 border-black bg-danger" onclick="alterar('red')"></div>
+        <div class="border border-3 border-black bg-success" onclick="alterar('green')"></div>
+        <div class="border border-3 border-black bg-primary" onclick="alterar('blue')"></div>
+        <div class="border border-3 border-black bg-warning" onclick="alterar('yellow')"></div>
+        <div style="background-color: magenta;" class="border border-3 border-black" onclick="alterar('magenta')"></div>    
+    </main>
+    <br><br>
+    <button class="btn btn-lg btn-secondary" onclick="alterar('white')">Reset</button>
+    
+    <script>
+        function alterar(cor){
+            var body = document.querySelector("body")
+            body.style.backgroundColor = cor;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+</head>
+
+<body>
+    <h1><strong>Praticando 1 - JavaScript</strong></h1>
+
+    <h2 id="welcome">Seja bem-vindo</h2>
+
+    <button onclick="add()">Adicionar texto (parágrafo de Lorem Ipsum)</button>
+    <br><br>
+    <button onclick="removeAll()">Remover texto (todos os parágrafos)</button>
+
+    <br><br><br>
+    <div id="paragraphs">
+    </div>
+
+    <script>
+        let text;
+        let name = prompt("Qual é o seu nome?");
+        text = "Seja bem-vindo <strong>" + name + "<strong>";
+
+        document.getElementById("welcome").innerHTML = text;
+
+        function add(){
+            const Modif = document.getElementById('paragraphs')
+
+            var addP = document.createElement('p')
+            addP.textContent = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi expedita minus corrupti pariatur nobis earum natus iusto consectetur, laborum saepe voluptatibus.'
+            addP.style.fontSize = "20px"
+
+            Modif.appendChild(addP)
+        }
+
+        function removeAll(){
+            var removeAll = document.getElementById('paragraphs')
+            removeAll.innerHTML = ''
+        }
+    </script>
+</body>
+
+</html>

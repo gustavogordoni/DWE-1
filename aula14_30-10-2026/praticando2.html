@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+</head>
+
+<body>
+    <h1><strong>Praticando 2 - JavaScript - Mini calculadora</strong></h1>
+
+    <div class="d-flex border w-100 justify-content-between px-">
+        <div class="border">
+            <label class="d-block" for="num1">Número 1</label>
+            <input type="number" id="num1">
+        </div>
+
+        <div class="border">
+            <label class="d-block" for="num2">Número 2</label>
+            <input type="number" id="num2">
+        </div>
+
+        <div class="border">
+            <label class="d-block" for="result">Resultado</label>
+            <input readonly disabled id="result">
+        </div>
+
+        <button onclick="sum()" class="btn btn-primary">Soma</button>
+        <button onclick="subtraction()" class="btn btn-primary">Subtração</button>
+        <button onclick="multiplication()" class="btn btn-primary">Multiplicação</button>
+        <button onclick="division()" class="btn btn-primary">Divisão</button>
+    </div>
+
+    <script>
+        var num1;
+        var num2;
+
+        function getValues() {
+            num1 = Number(document.getElementById("num1").value);
+            num2 = Number(document.getElementById("num2").value);
+        }
+
+        function sum() {
+            getValues();
+
+            var result = document.getElementById("result");
+            result.value = num1 + num2;
+        }
+
+        function subtraction() {
+            getValues();
+
+            var result = document.getElementById("result");
+            result.value = num1 - num2;
+        }
+
+        function multiplication() {
+            getValues();
+
+            var result = document.getElementById("result");
+            result.value = num1 * num2;
+        }
+
+        function division() {
+            getValues();
+
+            var result = document.getElementById("result");
+            result.value = num1 / num2;
+        }
+    </script>
+</body>
+
+</html>
