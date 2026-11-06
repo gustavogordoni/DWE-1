@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 5 - Mini-game JS</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+
+    <style>
+        div {
+            width: 7vw;
+            height: 7vw;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1>Praticando 5 - Mini-game JS</h1>
+
+    <h2 class="text-decoration-underline">Instruções: </h2>
+
+    <ol>
+        <li>Clique em um dos quadrados coloridos</li>
+        <li>Depois use as teclas <code>W</code> <code>A</code> <code>S</code> <code>D</code> para movimentar os
+            elementos para cima, esquerda e direita respectivamente.</li>
+    </ol>
+
+    <img class="d-block mx-auto" src="Material de Aula 15c/wasd.jpg" alt="">
+
+    <main class="d-flex gap-2">
+        <div id="dVermelho" onclick="selecionar('vermelho')" class="border border-4 border-black bg-danger">
+        </div>
+        <div id="dAzul" onclick="selecionar('azul')" class="border border-4 border-black bg-primary"></div>
+        <div id="dVerde" onclick="selecionar('verde')" class="border border-4 border-black bg-success"></div>
+    </main>
+
+    <script>
+        const PASSO = 20;
+
+        let original = null;
+        let clone = null;
+        let x = 0;
+        let y = 0;
+
+        let bgColor = null;
+
+        function selecionar(cor) {
+            if (original) {
+                alert("Atenção! Já há um quadrado selecionado. Desselecione-o antes de selecionar outro.");
+                return;
+            }
+
+            if (cor == "vermelho") {
+                original = document.querySelector("#dVermelho");
+                bgColor = "bg-danger";
+
+            } else if (cor == "azul") {
+                original = document.querySelector("#dAzul");
+                bgColor = "bg-primary";
+
+            } else if (cor == "verde") {
+                original = document.querySelector("#dVerde");
+                bgColor = "bg-success";
+            }
+            original.style.display = "none";
+
+            clone = document.createElement("div");
+            clone.classList.add("border", "border-4", "border-black");
+            clone.classList.add(bgColor);
+
+            clone.style.position = "fixed";
+
+            clone.addEventListener("click", desselecionar);
+            document.body.appendChild(clone);
+
+
+            x = (window.innerWidth - clone.offsetWidth) / 2;
+            y = (window.innerHeight - clone.offsetHeight) / 2;
+
+            atualizar();
+        }
+
+        function desselecionar() {
+            clone.remove();
+
+            original.style.display = "block";
+            original = null;
+            clone = null;
+        }
+
+        function atualizar() {
+            clone.style.left = x + "px";
+            clone.style.top = y + "px";
+        }
+
+        document.addEventListener("keydown", function (event) {
+            if (!clone) {
+                return;
+            }
+
+            switch (event.key.toLowerCase()) {
+                case "w":
+                case "arrowup":
+                    y = y - PASSO;
+                    break;
+
+                case "s":
+                case "arrowdown":
+                    y = y + PASSO;
+                    break;
+
+                case "a":
+                case "arrowleft":
+                    x = x - PASSO;
+                    break;
+
+                case "d":
+                case "arrowright":
+                    x = x + PASSO;
+                    break;
+
+                default:
+                    return;
+            }
+
+            atualizar();
+        });
+    </script>
+
+</body>
+
+</html>

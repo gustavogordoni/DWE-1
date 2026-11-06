@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 4 - Manipulações</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+</head>
+
+<body class="container">
+    <h1>Praticando 4 - Manipulações</h1>
+
+    <nav class="d-flex justify-content-between mt-4">
+        <div>
+            <h3>Lado</h3>
+            <div class="input-group mb-3">
+                <button id="ladoEsquerdo" onclick="ladoEsquerdo()" class="btn btn-primary"
+                    type="button">Esquerdo</button>
+                <button id="ladoDireito" onclick="ladoDireito()" class="btn btn-outline-primary"
+                    type="button">Direito</button>
+            </div>
+        </div>
+
+        <div>
+            <h3>Parágrafos</h3>
+            <button onclick="p_add()" class="btn btn-primary" type="button">Adicionar</button>
+            <button onclick="p_rem_primeiro()" class="btn btn-primary" type="button">Remover primeiro</button>
+            <button onclick="p_rem_ultimo()" class="btn btn-primary" type="button">Remover último</button>
+            <button onclick="p_rem_todos()" class="btn btn-primary" type="button">Remover todos</button>
+        </div>
+
+        <div>
+            <h3>Imagens</h3>
+            <button onclick="img_add()" class="btn btn-primary" type="button">Adicionar</button>
+            <button onclick="img_rem()" class="btn btn-primary" type="button">Remover uma</button>
+            <button onclick="img_rem_todos()" class="btn btn-primary" type="button">Remover todas</button>
+        </div>
+    </nav>
+
+
+    <main class="text-start border-3 p-5">
+    </main>
+
+    <script>
+        const main = document.querySelector("main");
+        const btnEsquerdo = document.querySelector("#ladoEsquerdo");
+        const btnDireito = document.querySelector("#ladoDireito");
+
+        let idP = 0;
+
+
+        function ladoEsquerdo() {
+            main.classList.replace('text-end', 'text-start')
+
+            btnEsquerdo.classList.replace('btn-outline-primary', 'btn-primary');
+            btnDireito.classList.replace('btn-primary', 'btn-outline-primary');
+        }
+
+        function ladoDireito() {
+            main.classList.replace('text-start', 'text-end');
+
+            btnEsquerdo.classList.replace('btn-primary', 'btn-outline-primary');
+            btnDireito.classList.replace('btn-outline-primary', 'btn-primary');
+        }
+
+        function p_add() {
+            const p = document.createElement("p");
+            idP++;
+            p.textContent = `#${idP} - Lorem ipsum dolor sit, amet consectetur adipisicing elit.`;
+            main.appendChild(p);
+        }
+
+        function p_rem_todos() {
+            document.querySelectorAll("main p").forEach(function (p) {
+                p.remove();
+            });
+        }
+
+        function p_rem_primeiro() {
+            const primeiroP = document.querySelector("main p");
+            primeiroP.remove();
+        }
+
+        function p_rem_ultimo() {
+            const todosP = document.querySelectorAll("main p");
+            todosP[todosP.length - 1].remove();
+        }
+
+        function img_add() {
+            const p = document.createElement("img");
+            p.src = "Material de Aula 15c/gatinho.jpg";
+            p.setAttribute("width", "200px");
+            p.classList.add("img-fluid", "m-3");
+
+            main.appendChild(p);
+        }
+
+        function img_rem() {
+            const ultimaImagem = document.querySelectorAll("main img");
+            ultimaImagem[ultimaImagem.length - 1].remove();
+        }
+
+        function img_rem_todos() {
+            document.querySelectorAll("main img").forEach(function (img) {
+                img.remove();
+            });
+        }
+    </script>
+
+</body>
+
+</html>

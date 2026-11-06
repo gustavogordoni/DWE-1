@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 1 - Mostrar / Esconder</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+</head>
+<body class="container">
+    <h1>Praticando 1 - Mostrar/Esconder</h1>
+    
+    <nav class="d-flex justify-content-between">
+        <button id="mostrar" class="btn btn-primary">Mostrar</button>
+        <button id="esconder" class="btn btn-primary">Esconder</button>
+    </nav>
+
+    <div id="div" class="bg-info w-100 text-center p-5 mt-5">
+        <p class="fs-1">Meu DIV</p>
+    </div>
+
+    <script>
+        const div = document.querySelector("#div");
+        const mostrar = document.querySelector("#mostrar");
+        const esconder = document.querySelector("#esconder");
+
+        mostrar.addEventListener("click", function(){
+            div.style.display = "block";
+        });
+        esconder.addEventListener("click", function(){
+            div.style.display = "none";
+        });
+    </script>
+</body>
+</html>

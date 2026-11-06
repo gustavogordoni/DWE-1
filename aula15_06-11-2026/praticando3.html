@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 3 - Formulário com validações</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+</head>
+
+<body class="container">
+    <h1>Praticando 3 - Formulário com validações</h1>
+
+    <form class="row g-3">
+        <div class="col-md-6">
+            <label for="nome" class="form-label">Nome</label>
+            <input type="text" class="form-control is-invalid" id="nome" value="" required>
+            <div id="nomeFeedback" class="invalid-feedback">
+                Informe o seu nome completo
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control is-invalid" id="email" aria-describedby="emailFeedback" required>
+            <div id="emailFeedback" class="invalid-feedback">
+                Informe um endereço de email válido.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="telefone" class="form-label">Telefone</label>
+            <input type="text" class="form-control is-invalid" id="telefone" aria-describedby="telefoneFeedback"
+                required>
+            <div id="telefoneFeedback" class="invalid-feedback">
+                Informe um telefone de contato
+            </div>
+        </div>
+        <div class="col-md-6">
+            <label for="idade" class="form-label">Idade</label>
+            <select class="form-select is-invalid" id="idade" aria-describedby="idadeFeedback" required>
+                <option selected disabled value="">[Escolha uma opção]</option>
+                <option value="1">Menor de idade </option>
+                <option value="2">19 a 25 anos</option>
+                <option value="3">26 a 50 anos</option>
+                <option value="4">50+ anos</option>
+            </select>
+            <div id="idadeFeedback" class="invalid-feedback">
+                Escolha a opção que represente sua idade atual
+            </div>
+        </div>
+
+        <div class="col-mb-6">
+            <label for="observacoes" class="form-label">Observações</label>
+            <textarea class="form-control is-invalid" id="observacoes" placeholder="Required example textarea"
+                required></textarea>
+            <div id="observacoesFeedback" class="invalid-feedback">
+                Informe uma observação
+            </div>
+        </div>
+        <div class="col-12 text-center">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-warning" type="reset">Limpar</button>
+        </div>
+    </form>
+
+    <script>
+        const nome = document.getElementById("nome");
+        const email = document.getElementById("email");
+        const telefone = document.getElementById("telefone");
+        const idade = document.getElementById("idade");
+        const observacoes = document.getElementById("observacoes");
+
+        nome.addEventListener('blur', function (event) {
+            if (nome.value != "") {
+                nome.classList.remove('is-invalid');
+                nome.classList.add('is-valid');
+            } else {
+                nome.classList.remove('is-valid');
+                nome.classList.add('is-invalid');
+            }
+        });
+
+        email.addEventListener('blur', function (event) {
+            if (email.value != "") {
+                email.classList.remove('is-invalid');
+                email.classList.add('is-valid');
+            } else {
+                email.classList.remove('is-valid');
+                email.classList.add('is-invalid');
+            }
+        });
+
+        telefone.addEventListener('blur', function (event) {
+            if (telefone.value != "") {
+                telefone.classList.remove('is-invalid');
+                telefone.classList.add('is-valid');
+            } else {
+                telefone.classList.remove('is-valid');
+                telefone.classList.add('is-invalid');
+            }
+        });
+
+        idade.addEventListener('blur', function (event) {
+            if (idade.value != "") {
+                idade.classList.remove('is-invalid');
+                idade.classList.add('is-valid');
+            } else {
+                idade.classList.remove('is-valid');
+                idade.classList.add('is-invalid');
+            }
+        });
+
+        observacoes.addEventListener('blur', function (event) {
+            if (observacoes.value != "") {
+                observacoes.classList.remove('is-invalid');
+                observacoes.classList.add('is-valid');
+            } else {
+                observacoes.classList.remove('is-valid');
+                observacoes.classList.add('is-invalid');
+            }
+        });
+
+
+    </script>
+
+</body>
+
+</html>

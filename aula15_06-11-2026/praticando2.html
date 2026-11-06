@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 2 - Lâmpada</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <h1>Praticando 2 - Lâmpada</h1>
+
+    <br><br>
+    <div class="text-center">
+        <img class="" src="Material de Aula 15c/lampada.png" alt="" onmouseenter="ascender()" onmouseleave="apagar()">
+
+        <p class="fs-1 fw-bold">Lâmpada apagada</p>
+    </div>
+
+    <script>
+        function ascender() {
+            document.querySelector("body").style.backgroundColor = "white";
+            document.querySelector("body").style.color = "black";            
+            document.querySelector("img").setAttribute("src", "Material de Aula 15c/lampada-acesa.png");
+            document.querySelector("p").textContent = "Lâmpada acesa";
+        }
+        function apagar() {
+            document.querySelector("body").style.backgroundColor = "black";
+            document.querySelector("body").style.color = "white";
+            document.querySelector("img").setAttribute("src", "Material de Aula 15c/lampada.png");
+            document.querySelector("p").textContent = "Lâmpada apagada";
+        }
+    </script>
+
+</body>
+
+</html>

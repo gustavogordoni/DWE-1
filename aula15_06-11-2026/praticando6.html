@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando 6 - Local Storage</title>
+    <link rel="stylesheet" href="../assets/bootstrap.css">
+
+    <style>
+        main div {
+            width: 7vw;
+            height: 7vw;
+        }
+
+        #preview {
+            display: none;
+            font-size: 3rem;
+        }
+    </style>
+
+</head>
+
+<body class="container">
+    <h1 class="mb-4"><strong>Praticando 6 - Local Storage</strong></h1>
+
+    <main class="d-flex justify-content-around">
+        <div class="border border-3 border-black bg-danger" onclick="alterar('red')" onmouseenter="previewEntrar('red')"
+            onmouseleave="previewSair()"></div>
+        <div class="border border-3 border-black bg-success" onclick="alterar('green')"
+            onmouseenter="previewEntrar('green')" onmouseleave="previewSair()"></div>
+        <div class="border border-3 border-black bg-primary" onclick="alterar('blue')"
+            onmouseenter="previewEntrar('blue')" onmouseleave="previewSair()"></div>
+        <div class="border border-3 border-black bg-warning" onclick="alterar('yellow')"
+            onmouseenter="previewEntrar('yellow')" onmouseleave="previewSair()"></div>
+        <div style="background-color: magenta;" class="border border-3 border-black" onclick="alterar('magenta')"
+            onmouseenter="previewEntrar('magenta')" onmouseleave="previewSair()"></div>
+    </main>
+    <br><br>
+
+    <div class="text-center">
+        <button class="btn btn-lg btn-secondary" onclick="alterar('white')">Reset</button>
+    </div>
+
+    <div id="preview" class="text-center mt-5">
+        <p><strong>Preview</strong></p>
+    </div>
+
+    <script>
+        var corAtual = localStorage.getItem("corFundo") ?? "white";
+        const body = document.querySelector("body");
+        body.style.backgroundColor = corAtual;
+
+        function alterar(cor) {
+            body.style.backgroundColor = cor;
+            corAtual = cor;
+            localStorage.setItem("corFundo", cor);
+        }
+
+        function previewEntrar(cor) {
+            body.style.backgroundColor = cor;
+            document.getElementById("preview").style.display = "block";
+        }
+
+        function previewSair() {
+            body.style.backgroundColor = corAtual;
+            document.getElementById("preview").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
