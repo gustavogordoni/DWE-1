@@ -785,13 +785,15 @@
 
       <div class="mb-4">
         <span class="badge text-bg-primary mb-2">Aula 14 — 30/10/2026</span>
-        <h2>JavaScript: manipulação do DOM e eventos</h2>
+        <h2>JavaScript: eventos e manipulação do DOM</h2>
 
         <p class="text-body-secondary">
-          Prática de JavaScript em páginas HTML, com eventos e
-          manipulação de elementos, além de uma aplicação de lista de
-          tarefas com o código em arquivos <code>.js</code> externos.
-          <!-- AJUSTE: confirme os tópicos da aula -->
+          Prática de JavaScript puro com eventos de clique e de mouse,
+          caixas de diálogo com <code>prompt</code>, leitura de campos de
+          formulário, criação e remoção de elementos no DOM e uso de
+          atributos <code>data-*</code>. Também foi desenvolvida uma
+          aplicação de lista de tarefas, com o código em arquivos
+          <code>.js</code> externos.
         </p>
       </div>
 
@@ -800,10 +802,12 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100">
             <div class="card-body d-flex flex-column">
-              <h3 class="h5">Praticando 1</h3>
+              <h3 class="h5">Praticando 1 — Saudação e textos</h3>
               <p class="card-text text-body-secondary">
-                <!-- AJUSTE -->
-                Primeiro exercício de JavaScript da aula.
+                Pergunta o nome via <code>prompt</code> e o exibe na
+                página com <code>textContent</code> ("visitante" se
+                cancelar). Dois botões adicionam e removem parágrafos
+                dentro de uma <code>div</code>.
               </p>
               <a href="aula14_30-10-2026/praticando1.html" class="btn btn-primary mt-auto">
                 Acessar
@@ -815,10 +819,11 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100">
             <div class="card-body d-flex flex-column">
-              <h3 class="h5">Praticando 2</h3>
+              <h3 class="h5">Praticando 2 — Mini calculadora</h3>
               <p class="card-text text-body-secondary">
-                <!-- AJUSTE -->
-                Segundo exercício de JavaScript da aula.
+                Calculadora com dois números e as quatro operações
+                básicas. Os valores dos campos são convertidos com
+                <code>Number()</code> e o resultado é exibido na página.
               </p>
               <a href="aula14_30-10-2026/praticando2.html" class="btn btn-primary mt-auto">
                 Acessar
@@ -830,10 +835,12 @@
         <div class="col-md-6 col-lg-4">
           <div class="card h-100">
             <div class="card-body d-flex flex-column">
-              <h3 class="h5">Praticando 3</h3>
+              <h3 class="h5">Praticando 3 — Caixas coloridas</h3>
               <p class="card-text text-body-secondary">
-                Seleção da cor de fundo da página, com visualização
-                prévia (<em>preview</em>) da cor escolhida.
+                Caixas coloridas que mudam o fundo da página ao clicar.
+                Com <code>mouseover</code> e <code>mouseout</code>, a cor
+                é pré-visualizada com um texto "preview", e um botão
+                Reset volta o fundo para branco.
               </p>
               <a href="aula14_30-10-2026/praticando3.html" class="btn btn-primary mt-auto">
                 Acessar
@@ -847,8 +854,8 @@
             <div class="card-body d-flex flex-column">
               <h3 class="h5">Lista de Tarefas</h3>
               <p class="card-text text-body-secondary">
-                <!-- AJUSTE -->
-                Aplicação de tarefas com JavaScript em arquivo externo.
+                Aplicação de lista de tarefas com o JavaScript em
+                arquivo externo (<code>tarefas.js</code>).
               </p>
               <a href="aula14_30-10-2026/tarefas.html" class="btn btn-primary mt-auto">
                 Acessar
@@ -862,8 +869,8 @@
             <div class="card-body d-flex flex-column">
               <h3 class="h5">Lista de Tarefas — versão 2</h3>
               <p class="card-text text-body-secondary">
-                <!-- AJUSTE -->
-                Segunda versão da aplicação de tarefas.
+                Segunda versão da lista de tarefas, também com o
+                JavaScript em arquivo externo (<code>tarefas2.js</code>).
               </p>
               <a href="aula14_30-10-2026/tarefas2.html" class="btn btn-primary mt-auto">
                 Acessar
@@ -959,7 +966,7 @@
             <div class="card-body d-flex flex-column">
               <h3 class="h5">Praticando 5 — Mini-game JS</h3>
               <p class="card-text text-body-secondary">
-                Quadrados coloridos movidos com as teclas W, A, S e D,
+                Quadrados coloridos movidos com as teclas <code>W</code>, <code>A</code>, <code>S</code> e <code>D</code>,
                 com seleção por clique e aviso quando já há um
                 quadrado selecionado.
               </p>
